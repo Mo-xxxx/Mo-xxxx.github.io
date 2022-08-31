@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ='cl'> Background Color</h1>
+    <table style="width: 100px; height:50px;" >
+        <tr>
+            <td onmouseover="byChange(this.style.backgroundColor)" onmouseout="byChange('transparent')" style="background-color: rgb(236, 178, 236);"></td>
+            <td onmouseover="byChange(this.style.backgroundColor)" onmouseout="byChange('transparent')" style="background-color: rgb(205, 221, 149);"></td>
+            <td onmouseover="byChange(this.style.backgroundColor)" onmouseout="byChange('transparent')" style="background-color: rgb(149, 165, 221);"></td>
+        </tr>
+    </table>
+
+    <script>
+        function byChange(bg){
+            console.log(bg);
+            document.body.style.backgroundColor = bg;
+            let cl = document.querySelector('#cl');
+            if (bg == 'rgb(236, 178, 236)'){
+                cl.style.color = 'white';
+            }else if (bg =='rgb(205, 221, 149)'){
+                cl.style.color = 'beige';
+            }else if (bg == 'rgb(149, 165, 221)'){
+                cl.style.color = 'yellow';
+            }else{
+                cl.style.color =' black';
+            }
+        }
+    </script>
+</body>
+</html>

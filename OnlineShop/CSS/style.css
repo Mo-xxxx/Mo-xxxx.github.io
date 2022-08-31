@@ -1,0 +1,595 @@
+/******************* INDEX****************** */
+*{
+    padding:6px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: dancing;
+    src: url(../Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+.logo{
+    width: 90px;
+    height: 70px;
+    margin-left: 40px;
+    margin-top: 6px;
+}
+
+.brand_name{
+    position: relative;
+    top: -64px;
+    left: 65px;
+    font-family: dancing;
+    font-size: solid 15px;
+    font-weight: bold;
+}
+
+.nav_brand{
+    display:inline-block;
+}
+
+.navbar ul{
+    float: right;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 50px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.navbar ul li a:hover{
+    letter-spacing: 5px;
+    color: rgb(111, 131, 197);
+    transition-duration: .5s;
+}
+
+.navbar{
+    height: 85px;
+}
+
+.cart{
+    position: relative;
+    top: -18px;
+    background-color: black;
+    color: white;
+    padding:0px 5px;
+    border-radius: 50%;
+    left: -20px;
+}
+/* end nav */
+
+/* start background */
+.bg_image{
+    width: 100%;
+    height: 400px;
+}
+
+.bg_text{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.perfect{
+    font-family: dancing;
+    font-weight: unset;
+    margin-bottom: 10px;
+}
+
+.shopnow{
+    border: 1px solid rgb(111, 131, 197);
+    color: rgb(111, 131, 197);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.shopnow:hover{
+    background-color: rgb(111, 131, 197);
+    color: white;
+    cursor: pointer;
+}
+
+/* @media screen and (min-width: 1224px){
+    
+} */
+
+/* product */
+.product_header{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.divide{
+    width: 100px;
+    margin: auto;
+    border:none;
+    border-top: 5px solid rgb(111, 131, 197);
+}
+
+.product{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-gap: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product_image{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 4px 10px 20px rgb(197, 188, 188);
+    /*X-axis Y-axis Blur Color*/
+}
+
+.add_to_cart{
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(189, 198, 227);
+    color:black;
+}
+
+.discount{
+    color:red;
+    text-decoration: line-through;
+}
+
+/*About*/
+.about{
+    margin-top: 50px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto;
+    background-image:url(../Images/bg1.jpg);
+    background-position: 50%;
+    /* top right bottom left */
+}
+
+.about div{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: rgb(16, 14, 14);
+}
+
+.divided{
+    width: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-top: 5px solid black;
+}
+
+/* Start Packaging  */
+
+.packaging{
+    margin-top:50px;
+    margin-left: 100px;
+}
+
+.packaging_img{
+    width: 40%;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+}
+
+.packaging_text{
+    /* margin-left: 600px; */
+    position: relative;
+    left: 50px;
+    width: 88%;
+}
+
+.packaging_text p{
+    text-align: justify;
+}
+
+.packaging_text h2{
+    margin-top: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Service */
+.service{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(216, 214, 212);
+    margin-top: 50px;
+    padding-left:50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+.service div p{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.service div p b{
+    font-size: 20px;
+}
+
+/* footer */
+.footer{
+    padding: 80px;
+    background-color: rgb(17, 12, 50);
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0px 15px ;
+}
+
+.footer ul{
+    margin: auto;
+    width: 450px;
+}
+
+.footer ul li a{
+    color:rgb(186, 182, 182);
+    text-decoration: none;
+}
+
+.design_text{
+    color:rgb(186, 182, 182);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.fa-instagram{
+    margin: 0px 15px;
+}
+
+.social a{
+    color:rgb(186, 182, 182) ;
+}
+
+/******************* BLOG****************** */
+/* Start Intro Blog */
+
+.blog_header{
+    position: absolute;
+    font-family: dancing;
+    font-size: 70px;
+    padding-left: 27%;
+    padding-top: 5%;
+    color:rgba(58, 56, 54, 0.865);
+}
+
+.blog_image{
+    border-radius: 50%;
+    height: 500px;
+    width: 450px;
+    padding-left: 70px;
+    padding-top: 5%;
+    display: inline-block;
+}
+
+.blog_text{
+    position: relative;
+    text-align: justify;
+    float: right;
+    width: 50%;
+    padding-top: 18%;
+    right: 60px;
+    color: grey;
+}
+
+.blog_icon{
+    width: 17%;
+    color: grey;
+    position: absolute;
+    bottom: 0px;
+    right: 16px; 
+}
+
+.blog_icon hr{
+    width: 40%;
+    margin: 0 auto;
+    border: none;
+    border-top: 3px solid grey;
+    margin-top: 15px;
+}
+/* End Intro Blog */
+
+/* Start Blog Categories */
+.blog_cat{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(250, 248, 225);
+    padding: 5%;
+    text-align: center;
+}
+
+.blog_cat div h1{
+    font-family: dancing;
+    font-size: 50px;
+}
+
+.blog_cat div small{
+    text-align: justify;
+    padding-top: 5%;
+}
+
+.blog_cat div small hr{
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-top: 5px solid grey;
+}
+
+.blog_button{
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(189, 198, 227);
+    color:rgb(33, 32, 32);
+}
+
+.blog_cat div h2{
+    text-align: center;
+    font-family: dancing;
+}
+
+.blog_cat div p{
+    text-align: center;
+    margin-top: 5px;;
+}
+
+.blog_img{
+    border-radius: 40% 40% 0% 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+    height:350px;
+}
+
+/* End Blog Categories */
+
+/******************* CONTACT ****************** */
+/* Start Contact Intro */
+
+.cont_intro{
+    background: linear-gradient(110deg, #fbf3e1 60%, rgb(196, 204, 253) 60%);
+    text-align: justify;
+    padding-left: 150px;
+    padding-top: 150px;
+}
+
+.contact_img{
+    border-radius: 50%;
+    height: 300px;
+    width: 400px;
+    float: right;
+    padding-right:15% ; 
+}
+
+.cont_intro h1{
+    font-family: dancing;
+    font-size: 65px;
+}
+
+.cont_intro h2{
+    margin-top: 5px;
+    font-size: large;
+    padding-left: 90px;
+}
+
+.cont_intro p{
+    padding: 50px 50px 0 0;
+}
+
+/* Contact Form */
+.cont_text{
+    text-align: center;
+    background-color:rgb(247, 250, 206) ;
+    
+}
+.cont_text input{
+    margin-top: 20px;
+    padding-top : 5px;
+    text-align: center;
+    width: 300px;
+}
+
+.cont_text textarea{
+    margin-top: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+.cont_text button{
+    margin-top: 20px;
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(181, 175, 240);
+    color:rgb(33, 32, 32);
+}
+
+/* End Contact Intro */
+
+/******************* ABOUT ****************** */
+
+/* About Start */
+.about_bg{
+    background-color: rgb(240, 249, 224);
+    padding-top: 200px;
+}
+
+.about_text{
+    padding-left: 5%;
+    margin-top: 20px;
+    padding-right: 5%;
+}
+
+.text_1{
+    text-align: left;
+    padding-right: 5%;
+    display: inline-block;
+    width: 60%;
+    text-align: justify;
+    margin-top: 20px;
+
+}
+
+.aboutpic_1{
+    float:right;
+    margin-left:10%; 
+    width:300px;
+    height:400px;
+    border-radius: 34%;
+    margin-top: -10%;
+
+}
+
+.aboutpic_2{
+    width: 40%;
+    border-radius: 10px;
+    float: left;
+    padding-top: 20%;
+}
+
+.text_2{
+    padding-top: 25%;
+    padding-left: 50%;
+    text-align: justify;
+}
+
+/* About End */
+
+/* Service Start */
+.service{
+    background-color: white;
+}
+
+.service h1{
+    text-align: center;
+}
+
+.serv_grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5%;
+    text-align: center;
+}
+
+.service_img{
+    border-radius: 40% 40% 40% 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+    height:350px;
+}
+
+.serv_line{
+    border: none;
+    border-left: 5px solid grey;
+}
+
+.about_button{
+    margin-top: 20px;
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(181, 175, 240);
+    color:rgb(33, 32, 32);
+}
+
+
+/******************* SHOP ****************** */
+.shop_header{
+    padding-left: 50px;
+    font-family: dancing;
+    font-size: 25px;
+    padding-top: 90px;
+}
+
+.shop_icon{
+    display: inline-block;
+    vertical-align: middle;
+    display: flex;
+}
+
+.div_line{
+    width: 260px;
+    margin-top: 10px;
+    border:none;
+    border-top: 3px solid rgb(0, 0, 0);
+}
+
+.shop_table{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 400px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: small;
+    padding-right: 40px;
+    margin-top: -10%;
+}
+
+.shop_img{
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+    height:350px;
+}
+
+.shop_text1{
+    padding-right: 43%;
+    text-align: justify;
+}
+
+.flower_price{
+    padding-left: 75%;
+
+}
+
+.shop_page{
+    margin-top: 30px;
+    text-align: center;
+}
+.shop_page p{
+    /* display: inline-block; */
+    vertical-align: middle;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.shop_num{
+    font-weight: bold;
+}

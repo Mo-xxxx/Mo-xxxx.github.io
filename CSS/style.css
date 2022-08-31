@@ -1,0 +1,193 @@
+h3 {
+    color: cadetblue;
+    font-size: 40px;
+    text-align: center;
+}
+
+small {
+    color:crimson;
+}
+
+/*Universal Selector is "*" */
+* {
+    color:rgb(24, 10, 10);
+    /*margin: 10px;
+    padding: 0px;*/
+}
+
+/* Tag and element selector */
+h1 {
+    color:rgb(255, 160, 122);
+    text-align: center;
+}
+
+/* border */
+.border1{
+    border: 5px outset rgb(255, 208, 0);
+
+}
+
+.border2{
+    border-top: 5px dotted rgb(63, 98, 186);
+    border-left: 5px dashed rgb(23, 115, 72);
+    border-bottom: 5px groove rgb(143, 39, 172);
+    border-right: 5px double rgb(188, 51, 51);
+}
+
+.borderstyle1{
+    border-style:dotted;
+}
+
+.borderstylemix{
+    /* border-style: solid dotted ; */
+    /* Solid worked for TOP and BOTTOM / dotted worked for LEFT and RIGHT */
+    /* border-style: dotted dashed double; */
+    /* Top /Left & Right/ Bottom */
+    border-style: solid dashed dotted double;
+    /* Top / Right / Bottom/ Left */
+    /* Clockwise direction */
+}
+
+.borderwidth1{
+    border-width: 1px 10px;
+    border-style: dashed;
+}
+
+/* margin */
+
+.margin1{
+    margin: 100px;
+    border: 2px solid grey;
+}
+
+.margin2{
+    margin-left: 50px;
+}
+
+.padding{
+    padding: 100px 40px 300px 10px;
+    /* Clockwise Direction */
+    border: 10px double rgb(63, 98, 186);
+}
+
+/* inline layout*/
+.inline{
+    border:  1px solid rgb(219, 188, 32);
+    display: inline-block;
+    width: 200px;
+}
+
+.block{
+    border: 1px solid red;
+    width: 200px;
+    display: inline-block;
+}
+
+/* Float */
+.float_left img{
+    width: 40%;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_right img{
+    width: 40%;
+    float:right;
+}
+
+.grid1 div,
+.grid2 div,
+.grid3 div,
+.grid4 div,
+.grid5 div,
+.grid6 div {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.grid1, 
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6 {
+    display: grid ;
+    grid-template-columns:auto auto auto;
+}
+
+.grid2 {
+    grid-column-gap: 40px;
+}
+
+.grid3 {
+    grid-row-gap: 40px;
+}
+
+.grid4 {
+    grid-gap: 50px;
+}
+
+.column_add {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.row_add {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.relative_parent{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid rgb(135, 144, 222);
+}
+
+.relative{
+    width: 400px;
+    height: 200px;
+    border: 2px solid yellow;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.absolute_parent{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid rgb(235, 24, 1);
+    position: relative;
+}
+
+.absolute{
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(12, 10, 14);
+    position:absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.fixed{
+    position: fixed;
+    top: 100px;
+    right: 100px;
+}
+
+/*font*/
+.online{
+    font-family: 'Ballet', cursive;
+}
+
+@font-face {
+    font-family: caveat;
+    src: url(Caveat/Caveat-VariableFont_wght.ttf);
+}
+
+.offline{
+    font-family: caveat;
+}
